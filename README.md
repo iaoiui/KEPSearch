@@ -14,6 +14,53 @@ cd docker_neo4j
 docker-compose up -d
 ```
 
+Get KEPs
+```
+go run main.go
+
+0 :      Pod Security Policy
+1 :      Addon management layer
+2 :      CronJobs (previously ScheduledJobs)
+3 :      Add AppArmor support
+4 :      Add sysctl support
+5 :      PodDisruptionBudget and /eviction subresource
+6 :      Arbitrary/Custom Metrics in the Horizontal Pod Autoscaler
+7 :      Support node-level user namespace remapping
+8 :      Integrate Cluster Bootstrap/Discovery with Kubenetes Core
+9 :      Seccomp
+10 :     Taint Based Eviction
+11 :     Snapshot / Restore Volume Support for Kubernetes (CRD + External Controller)
+12 :     Provide RunAsGroup feature for Containers in a Pod
+13 :     Kubelet Client TLS Certificate Rotation
+14 :     Kubelet Server TLS Certificate Rotation
+15 :     Ephemeral Containers
+16 :     Limit node access to API
+17 :     Dynamic Kubelet Configuration
+18 :     Add support for resizing PVs
+19 :     Raw block device using persistent volume source
+20 :     Ability to create dynamic HA clusters with kubeadm
+21 :     Local Ephemeral Storage Capacity IsolationÂ
+22 :     Supports Storage as Allocatable Resource
+23 :     Support paged LIST queries from the Kubernetes API
+24 :     Taint node by Condition
+25 :     Redesign Event API
+26 :     Support AWS Network Load Balancer
+27 :     Kubectl Diff
+28 :     Configurable Pod Process Namespace Sharing
+29 :     IPv6 support added
+30 :     Add support for online resizing of PVs
+31 :     Topology aware routing of services
+32 :     External client-go credential providers
+33 :     TokenRequest API and Kubelet integration
+34 :     Enable kubectl to expose `ephemeral-storage` resource information
+35 :     Schedule DaemonSet Pods by kube-scheduler
+36 :     Node Failure Recover with ForceEvictione Taint
+37 :     Deprecate ComponentStatus
+38 :     Dynamic Maximum volume count
+39 :     Server-side Apply
+~
+```
+
 # Verification
 
 ```
