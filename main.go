@@ -13,7 +13,7 @@ var QueryGetKEP neo4jwrapper.CipherQuery = "match (k:KEP) return k.name"
 var QueryGetSIG neo4jwrapper.CipherQuery = "match (k:KEP) return k.SIG"
 
 func main() {
-	result, err := neo4jwrapper.Query(neo4jwrapper.GenerateCipherQuery(QueryGetSIG))
+	result, err := neo4jwrapper.Query(neo4jwrapper.GenerateCipherQuery(QueryGetKEP))
 	if err != nil {
 		fmt.Printf("%vというエラーが発生\n", err)
 		return
